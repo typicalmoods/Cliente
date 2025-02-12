@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+    <h1>Tienda de Vapeo</h1>
+    <form action="http://localhost/servidor/tienda.php" method="POST">
+        <h2>Productos:</h2>
+        <label for="vaper3000">Vaper 3000mAh (40€):</label>
+        <input type="number" id="vaper3000" name="vaper3000" min="0" value="0"><br><br>
+
+        <label for="vaper1500">Vaper 1500mAh (30€):</label>
+        <input type="number" id="vaper1500" name="vaper1500" min="0" value="0"><br><br>
+
+        <label for="liquido">Líquido (1.50€):</label>
+        <input type="number" id="liquido" name="liquido" min="0" value="0"><br><br>
+
+        <h2>Envío:</h2>
+        <input type="radio" id="envio24" name="envio" value="24h" required>
+        <label for="envio24">En 24h (7€)</label><br>
+
+        <input type="radio" id="envio3sem" name="envio" value="3sem">
+        <label for="envio3sem">En 3 semanas (Gratis)</label><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
